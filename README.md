@@ -34,11 +34,12 @@ The workflow demonstrates:
 - Google Drive
 - CSV / Excel
 
-Email Body
+### Email Body
+
+```text
 Dear [Name],
 
-This is a friendly reminder that your payment for Invoice ID:
-[Invoice ID] of Amount: ₹[Amount] is currently pending.
+This is a friendly reminder that your payment for Invoice ID: [Invoice ID] of Amount: ₹[Amount] is currently pending.
 
 Please find your payment details below for reference:
 
