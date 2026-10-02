@@ -4,38 +4,47 @@ https://agents.zapier.com/copy/65c3ba40-b434-45e2-9a65-0150659df063
 Google sheet link - 
 https://docs.google.com/spreadsheets/d/1C8QezSuCf7yhpllobUne75CGsOU9IA417mUSJmodt6U/edit?usp=sharing
 
-This project demonstrates an automated payment reminder workflow using Zapier, Google Sheets, and Gmail.
+# Automated Payment Reminder System using Zapier
+
+## Project Overview
+
+This project demonstrates an automated payment reminder workflow developed using Zapier, Google Sheets, and Gmail.
+
+The system retrieves invoice records from a spreadsheet, identifies pending payments, and sends personalized payment reminder emails to designated test recipients. After sending the reminder, the spreadsheet is updated to record the reminder status.
 
 ## Objective
 
-The objective is to automatically identify pending payment records from a spreadsheet and send personalized payment reminder emails to designated recipients.
+The objective is to automate the manual process of identifying pending payments and sending payment reminder emails.
 
-## Workflow
+The workflow demonstrates:
 
-Schedule by Zapier
-↓
-Google Sheets – Get Many Spreadsheet Rows
-↓
-Filter – Status = Pending
-↓
-Gmail – Send Payment Reminder
-↓
-Google Sheets – Update Spreadsheet Row
+- Scheduled automation
+- Spreadsheet data retrieval
+- Conditional filtering
+- Dynamic data mapping
+- Automated email delivery
+- Spreadsheet updates
+- Reminder tracking
 
-## Technologies Used
+## Tools and Technologies
 
 - Zapier
 - Google Sheets
 - Gmail
 - Google Drive
-- CSV/Excel
+- CSV / Excel
 
-## Key Features
+## Workflow
 
-- Scheduled workflow execution
-- Spreadsheet-based invoice processing
-- Pending payment filtering
-- Personalized email generation
-- Automated Gmail delivery
-- Spreadsheet update after sending
-- Reminder count tracking
+```text
+Schedule by Zapier
+        ↓
+Google Sheets – Get Many Spreadsheet Rows
+        ↓
+Filter – Status = Pending
+        ↓
+Filter – Email Exists
+        ↓
+Gmail – Send Payment Reminder
+        ↓
+Google Sheets – Update Spreadsheet Row
