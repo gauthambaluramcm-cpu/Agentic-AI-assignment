@@ -197,8 +197,9 @@ Ollama Chat Model     Simple Memory
                            Final Answer
 
 ```
+### RAG Retrieval Process
 ```
-RAG Retrieval Process
+
 
 User Question
       |
@@ -223,8 +224,9 @@ AI Agent
       v
 Final Answer
 
-
+```
 ## Vector Store Tool Description
+```
 
 The following description is provided to the Vector Store Tool:
 
@@ -236,9 +238,10 @@ Use this tool whenever the user asks about loan eligibility, minimum bureau scor
 Use only information explicitly stated in the provided Credit Appraisal RAG Knowledge Base. Apply only the rules relevant to the identified loan product.
 
 Do not use general knowledge. Do not invent, estimate, assume, or substitute values. If the requested parameter is not specified in the knowledge base, state that it is not available in the provided policy.
-
+```
 
 ## AI Agent System Prompt
+```
 You are a Credit Appraisal Policy Assistant.
 
 Your only source of factual information is the Credit Appraisal RAG Knowledge Base available through the Credit Policy Search tool.
