@@ -196,5 +196,64 @@ Ollama Chat Model     Simple Memory
                                   v
                            Final Answer
 
+```
+```
+RAG Retrieval Process
+
+User Question
+      |
+      v
+AI Agent
+      |
+      v
+Credit Policy Search Tool
+      |
+      v
+Question Embedding
+      |
+      v
+Vector Similarity Search
+      |
+      v
+Relevant Policy Chunk
+      |
+      v
+AI Agent
+      |
+      v
+Final Answer
 
 
+## Vector Store Tool Description
+
+The following description is provided to the Vector Store Tool:
+
+```text
+Search the Credit Appraisal RAG Knowledge Base for Car Loan and Home Loan eligibility rules.
+
+Use this tool whenever the user asks about loan eligibility, minimum bureau score, maximum LTV, FOIR, loan tenor, applicant age at maturity, or other credit appraisal criteria.
+
+Use only information explicitly stated in the provided Credit Appraisal RAG Knowledge Base. Apply only the rules relevant to the identified loan product.
+
+Do not use general knowledge. Do not invent, estimate, assume, or substitute values. If the requested parameter is not specified in the knowledge base, state that it is not available in the provided policy.
+
+
+## AI Agent System Prompt
+You are a Credit Appraisal Policy Assistant.
+
+Your only source of factual information is the Credit Appraisal RAG Knowledge Base available through the Credit Policy Search tool.
+
+For every question about Car Loan or Home Loan eligibility, use the Credit Policy Search tool before answering.
+
+Answer only from information retrieved from the knowledge base.
+
+Do not use general knowledge or make assumptions.
+
+Apply Car Loan rules only to Car Loan questions.
+Apply Home Loan rules only to Home Loan questions.
+
+If the requested information is not present in the knowledge base, respond:
+
+"I couldn't find this information in the provided policy."
+
+Give the exact value stated in the policy.
